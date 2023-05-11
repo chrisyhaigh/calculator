@@ -3,10 +3,17 @@ body {
     background-color: white;
 }
 
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 2em;
+}
+
 .container {
-    padding-top: 1em;
-    height: 760px;
-    width: 400px;
+    padding: 2em;
+    height: 590px;
+    width: 580px;
+    border-radius: 5%;
     text-align: center;
     background-color: black;
 }
