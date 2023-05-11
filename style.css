@@ -1,0 +1,21 @@
+body {
+    padding: 5em;
+    background-color: white;
+}
+
+.container {
+    padding-top: 1em;
+    height: 760px;
+    width: 400px;
+    text-align: center;
+    background-color: black;
+}
+
+.screen {
+    background-color: rgb(138, 199, 138);
+    height: 100px;
+}
+
+button {
+    font-size: 1em;
+}
