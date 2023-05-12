@@ -1,21 +1,17 @@
 body {
     padding: 5em;
-    background-image: url("resources/images/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg");
+    background-color: blueviolet;
+    background-image: url("/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg");
     background-size: cover;
 }
 
 
 .container {
     background-color: black;
-    border-radius: 5%;
-
+    border-radius: 2%;
 }
 
 .screen input { 
     font-size: 40px;
 }
 
-
-button {
-    font-size: 1em;
-}*/

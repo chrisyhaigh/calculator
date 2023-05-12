@@ -6,6 +6,7 @@ const resetButton = document.querySelector('#reset');
 
 // Added event listeners to the buttons//
 // Need to define if the button clicked is a number or an operator//
+// This allows for decimal point or number input we would add to the screen value//
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     // If the button clicked is a number
@@ -14,7 +15,7 @@ buttons.forEach(button => {
     }
     // If the button clicked is an operator
     else if (button.classList.contains('operator')) {
-      screen.value += ' ' + button.dataset.operator + ' ';
+      screen.value += '' + button.dataset.operator + '';
     }
   });
 });
