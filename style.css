@@ -1,6 +1,5 @@
 body {
     padding: 5em;
-    background-color: blueviolet;
     background-image: url("/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg");
     background-size: cover;
 }
@@ -8,7 +7,6 @@ body {
 
 .container {
     background-color: black;
-    border-radius: 2%;
 }
 
 .screen input { 
