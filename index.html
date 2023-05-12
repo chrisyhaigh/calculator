@@ -29,7 +29,7 @@
                 <button type="button" class="btn btn-light btn-block btn-lg">9</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-warning btn-block btn-lg">+</button>
+                <button type="button" class="btn btn-warning btn-block btn-lg operator" data-operator="+">+</button>
             </div>
         </div>
         <div class="row pt-3 pb-3">
@@ -43,7 +43,7 @@
                 <button type="button" class="btn btn-light btn-block btn-lg">6</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-warning btn-block btn-lg">-</button>
+                <button type="button" class="btn btn-warning btn-block btn-lg operator" data-operator="-">-</button>
             </div>
         </div>
         <div class="row pt-3 pb-3">
@@ -57,7 +57,7 @@
                 <button type="button" class="btn btn- btn-block btn-lg">3</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-warning btn-block btn-lg">x</button>
+                <button type="button" class="btn btn-warning btn-block btn-lg operator" data-operator="*">x</button>
             </div>
         </div>
         <div class="row pt-3 pb-3">
@@ -68,15 +68,15 @@
                 <button type="button" class="btn btn-light btn-block btn-lg">0</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-warning btn-block btn-lg">/</button>
+                <button type="button" class="btn btn-warning btn-block btn-lg operator" data-operator="/">/</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-warning btn-block btn-lg">=</button>
+                <button type="button" id="equals" class="btn btn-warning btn-block btn-lg" data-operator="=">=</button>
             </div>
         </div>
         <div class="row pt-3">
             <div class="col-12">
-                <button type="button" class="btn btn-danger btn-block btn-lg">AC</button>
+                <button type="button" id="reset" class="btn btn-danger btn-block btn-lg">AC</button>
             </div>
         </div>
     </div>
