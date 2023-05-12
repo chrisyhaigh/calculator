@@ -1,75 +1,32 @@
-const screenInput = document.getElementById("screen-input");
+//four main types of focus on calculator which are all doing different jobs//
+const screen = document.querySelector('#screen-input');
+const buttons = document.querySelectorAll('button');
+const equalsButton = document.querySelector('#equals');
+const resetButton = document.querySelector('#reset');
 
-document.querySelectorAll('button').forEach((button) => {
+// Added event listeners to the buttons//
+// Need to define if the button clicked is a number or an operator//
+buttons.forEach(button => {
   button.addEventListener('click', () => {
-    const buttonValue = button.textContent;
-
-    screenInput.value += buttonValue;
-  });
-});
-
-const resetButton = document.getElementById("reset");
-
-function resetCalculator() {
-  screenInput.value = '0';
-  screenInput.dataset.previousInput = '0';
-  console.log('Reset calculator to 0');
-}
-
-resetButton.addEventListener('click', resetCalculator);
-
-const operatorButtons = document.querySelectorAll('.operator');
-
-operatorButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const operator = button.dataset.operator;
-    const currentInput = parseFloat(screenInput.value);
-    const previousInput = parseFloat(screenInput.dataset.previousInput);
-    let result;
-
-    switch (operator) {
-      case '+':
-        result = currentInput + previousInput;
-        break;
-      case '-':
-        result = currentInput - previousInput;
-        break;
-      case '*':
-        result = currentInput * previousInput;
-        break;
-      case '/':
-        result = currentInput / previousInput;
-        break;
+    // If the button clicked is a number
+    if (!isNaN(button.innerText) || button.innerText === '.') {
+      screen.value += button.innerText;
     }
-
-    screenInput.value = result;
-    screenInput.dataset.previousInput = result;
+    // If the button clicked is an operator
+    else if (button.classList.contains('operator')) {
+      screen.value += ' ' + button.dataset.operator + ' ';
+    }
   });
 });
 
-const equalsButton = document.getElementById('equals');
-
+// Added event listener to equals button //
 equalsButton.addEventListener('click', () => {
-  const currentInput = parseFloat(screenInput.value);
-  const previousInput = parseFloat(screenInput.dataset.previousInput);
-  const operator = screenInput.dataset.operator;
-  let result;
+  // Evaluating the expression entered on the screen and updating the screen value
+  screen.value = eval(screen.value);
+});
 
-  switch (operator) {
-    case '+':
-      result = currentInput + previousInput;
-      break;
-    case '-':
-      result = currentInput - previousInput;
-      break;
-    case '*':
-      result = currentInput * previousInput;
-      break;
-    case '/':
-      result = currentInput / previousInput;
-      break;
-  }
-
-  screenInput.value = result;
-  screenInput.dataset.previousInput = result;
+// Added event listener to reset button(AC) //
+resetButton.addEventListener('click', () => {
+  // Clearing the screen value
+  screen.value = '';
 });
