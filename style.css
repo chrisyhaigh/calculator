@@ -18,11 +18,11 @@ h1 {
     border-radius: 0.87cm;
     border-width: 1em;
     border-color: bisque;
-    width: 350px;
+    width: 330px;
 }
 
 .screen input { 
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
