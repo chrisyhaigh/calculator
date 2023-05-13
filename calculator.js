@@ -9,13 +9,15 @@ const resetButton = document.querySelector('#reset');
 // This allows for decimal point or number input we would add to the screen value//
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    // If the button clicked is a number
-    if (!isNaN(button.innerText) || button.innerText === '.') {
+    // Conditional statement if button clicked is number or decimal point but decimal must not be clicked more than once//
+    if (!isNaN(button.innerText) || button.innerText === '.' && !screen.value.includes('.')) {
       screen.value += button.innerText;
     }
-    // If the button clicked is an operator
+    // If the button clicked is an operator//
     else if (button.classList.contains('operator')) {
       screen.value += '' + button.dataset.operator + '';
+    } else {
+      return console.error();
     }
   });
 });

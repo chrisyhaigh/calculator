@@ -1,8 +1,9 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 2em;
-    background-image: linear-gradient(90deg,rgb(0, 66, 128), rgb(255, 0, 234));
+    background-image: linear-gradient(90deg,rgb(150, 6, 6), rgb(66, 19, 141));
     /*background-image: url("/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg"); */
+    
 }
 
 h1 {
@@ -13,16 +14,17 @@ h1 {
 }
 
 .container {
-    background-color: black;
-    padding: 2em;
-    width: 320px;
-
+    background-color: rgb(27, 26, 26);
+    border-radius: 0.87cm;
+    border-width: 1em;
+    border-color: bisque;
+    width: 350px;
 }
 
 .screen input { 
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button {
-}
+
 
