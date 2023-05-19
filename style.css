@@ -1,13 +1,13 @@
 body {
     margin: 0 auto;
-    padding: 2em;
+    padding: 1rem;
     background-color: grey;
     /*background-image: url("/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg"); */
     
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: white;
@@ -25,6 +25,7 @@ h1 {
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 
 
