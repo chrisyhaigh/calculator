@@ -1,14 +1,12 @@
 body {
     margin: 0 auto;
     padding: 1rem;
-    background-color: grey;
-    /*background-image: url("/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg"); */
-    
+    background: linear-gradient(90deg, rgb(218, 59, 59), rgb(12, 12, 235));
+    font-family: 'Readex Pro', sans-serif;
 }
 
 h1 {
     font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: white;
 }
@@ -16,14 +14,15 @@ h1 {
 .container {
     background-color: rgb(27, 26, 26);
     border-radius: 1em;
-    border-width: 1em;
-    border-color: darkslategrey;
     width: 330px;
 }
 
-.screen input { 
+.screen input {
     font-size: 45px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    font-size: 28px;
 }
 
 
