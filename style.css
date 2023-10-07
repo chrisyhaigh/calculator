@@ -1,7 +1,10 @@
 body {
     margin: 0 auto;
-    padding: 1rem;
-    background: linear-gradient(90deg, rgb(218, 59, 59), rgb(12, 12, 235));
+    padding: 2rem;
+    background: url('resources/images/d447d3_f20dacfdc700487fb1505fa243422ac1~mv2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Readex Pro', sans-serif;
 }
 
@@ -12,9 +15,10 @@ h1 {
 }
 
 .container {
-    background-color: rgb(27, 26, 26);
-    border-radius: 1em;
+    background-color: rgb(30, 26, 26);
+    border-radius: 2em;
     width: 330px;
+    height: 100%;
 }
 
 .screen input {
